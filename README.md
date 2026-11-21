@@ -40,4 +40,4 @@ Sign in with an allowlisted GitHub account at `/studio`. Write plain text, use `
 
 [alexander@alexanderzwerner.com](mailto:alexander@alexanderzwerner.com) · [LinkedIn](https://www.linkedin.com/in/alexander-zwerner/) · [X](https://x.com/hey_zwerner)
 
-Personal project; all rights reserved.
+Licensed under the [MIT License](LICENSE).
