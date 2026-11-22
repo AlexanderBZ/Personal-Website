@@ -70,10 +70,10 @@ export default async function Home() {
             </span>
           ) : null}
         </header>
-        <p>Product manager. Angel investor. Optimist.</p>
+        <p>Builder. Angel Investor. Optimist.</p>
         <p>
-          Helping founders go from -1 to 0. Ideas, co-founders, VC intros (+
-          occasional angel check). See my{" "}
+          Helping founders go from -1 to 0. Ideas, beta testing, customer intros
+          (+ occasional angel check). See my{" "}
           <Link className="basic-link" href="/portfolio">
             portfolio
           </Link>
