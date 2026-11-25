@@ -7,7 +7,7 @@ import { createPageMetadata } from "@/lib/site";
 export const metadata: Metadata = createPageMetadata({
   title: "Writing",
   description:
-    "Essays and notes by Alexander Zwerner on product, startups, angel investing, and helping FDEs make the jump into founding.",
+    "Essays and notes by Alexander Zwerner on building, angel investing, and helping founders go from -1 to 0.",
   path: "/writing",
 });
 

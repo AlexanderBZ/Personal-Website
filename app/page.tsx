@@ -25,7 +25,7 @@ const homeJsonLd = serializeJsonLd({
       name: SITE_CONFIG.name,
       url: SITE_CONFIG.url,
       description: SITE_CONFIG.description,
-      jobTitle: "Product Manager & Angel Investor",
+      jobTitle: "Builder & Angel Investor",
       homeLocation: {
         "@type": "Place",
         name: SITE_CONFIG.location,
