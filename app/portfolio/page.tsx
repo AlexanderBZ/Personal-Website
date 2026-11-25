@@ -7,7 +7,7 @@ import { createPageMetadata } from "@/lib/site";
 export const metadata: Metadata = createPageMetadata({
   title: "Portfolio",
   description:
-    "Angel investments and portfolio companies backed by Alexander Zwerner, partnering early with technical founders and FDEs.",
+    "Angel investments and portfolio companies backed by Alexander Zwerner.",
   path: "/portfolio",
 });
 

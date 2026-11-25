@@ -10,7 +10,7 @@ export const SITE_CONFIG = {
   name: "Alexander Zwerner",
   url: "https://alexanderzwerner.com",
   description:
-    "Product manager and angel investor in San Francisco helping FDEs make the jump into founding. Essays, notes, and portfolio.",
+    "Builder. Angel Investor. Optimist. Helping founders go from -1 to 0 with ideas, beta testing, customer intros, and occasional angel checks.",
   location: "San Francisco",
   timeZone: "America/Los_Angeles",
   themeColor: "#fdfdfc",
