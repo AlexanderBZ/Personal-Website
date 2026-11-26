@@ -8,7 +8,7 @@ const EMAIL_BODY = `1) What are you exploring now and why?
 
 export const SITE_CONFIG = {
   name: "Alexander Zwerner",
-  url: "https://alexanderzwerner.com",
+  url: "https://www.alexanderzwerner.com",
   description:
     "Builder. Angel Investor. Optimist. Helping founders go from -1 to 0 with ideas, beta testing, customer intros, and occasional angel checks.",
   location: "San Francisco",
