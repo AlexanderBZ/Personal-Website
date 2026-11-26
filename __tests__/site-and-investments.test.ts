@@ -5,7 +5,7 @@ import { createPageMetadata, SITE_CONFIG } from "@/lib/site";
 describe("lib/site", () => {
   it("exposes valid site configuration and mailto link", () => {
     expect(SITE_CONFIG.name).toBe("Alexander Zwerner");
-    expect(SITE_CONFIG.url).toBe("https://alexanderzwerner.com");
+    expect(SITE_CONFIG.url).toBe("https://www.alexanderzwerner.com");
     expect(SITE_CONFIG.links.mailto).toContain(
       "mailto:alexander@alexanderzwerner.com?subject=",
     );
