@@ -528,6 +528,7 @@ export default function FreewriteAdmin({
               <Link
                 href={`/writing/${selectedPostId}`}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="freewrite-nav-btn"
               >
                 View live ↗
@@ -617,8 +618,8 @@ export default function FreewriteAdmin({
               // Keep the slug in sync with the title for new posts and drafts,
               // unless the slug was customized (live post URLs never change implicitly).
               if (
-                !selectedPostId ||
-                (postStatus === "draft" && slug === slugify(title))
+                postStatus === "draft" &&
+                (slug === "" || slug === slugify(title))
               ) {
                 setSlug(slugify(nextTitle));
               }
@@ -730,8 +731,8 @@ export default function FreewriteAdmin({
           <button
             type="button"
             onClick={() => {
-                  if (confirmDiscardChanges()) startNewEntry();
-                }}
+              if (confirmDiscardChanges()) startNewEntry();
+            }}
             className="freewrite-nav-btn"
           >
             New Entry

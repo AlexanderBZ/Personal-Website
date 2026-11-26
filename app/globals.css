@@ -337,7 +337,7 @@ body {
   border-bottom: none;
 }
 
-.post-list a,
+.post-list > ul a,
 .post-list-row {
   display: flex;
   align-items: center;
@@ -375,9 +375,9 @@ body {
   .post-list > ul:hover .post-list-meta {
     opacity: 0.3;
   }
-  .post-list a:hover h3,
-  .post-list a:hover time,
-  .post-list a:hover .post-list-meta {
+  .post-list > ul a:hover h3,
+  .post-list > ul a:hover time,
+  .post-list > ul a:hover .post-list-meta {
     opacity: 1;
   }
 }
