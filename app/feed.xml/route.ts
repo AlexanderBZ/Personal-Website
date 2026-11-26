@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, isValidIsoDate } from "@/lib/posts";
 import { SITE_CONFIG } from "@/lib/site";
 
 function escapeXml(value: string): string {
@@ -10,16 +10,21 @@ function escapeXml(value: string): string {
     .replace(/'/g, "&apos;");
 }
 
+function toRssUtcDate(isoDate?: string): string {
+  if (isoDate && isValidIsoDate(isoDate)) {
+    return new Date(`${isoDate}T00:00:00Z`).toUTCString();
+  }
+  return new Date().toUTCString();
+}
+
 export async function GET() {
   const posts = await getAllPosts();
-  const lastBuildDate = posts[0]?.date
-    ? new Date(`${posts[0].date}T00:00:00Z`).toUTCString()
-    : new Date().toUTCString();
+  const lastBuildDate = toRssUtcDate(posts[0]?.date);
 
   const itemsXml = posts
     .map((post) => {
       const postUrl = `${SITE_CONFIG.url}/writing/${encodeURIComponent(post.id)}`;
-      const pubDate = new Date(`${post.date}T00:00:00Z`).toUTCString();
+      const pubDate = toRssUtcDate(post.date);
       return [
         "    <item>",
         `      <title>${escapeXml(post.title)}</title>`,
